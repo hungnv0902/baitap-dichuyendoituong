@@ -52,11 +52,12 @@ function start(){
   if (hero.top >=(window.innerHeight - hero.size) &&  hero.left > 30) {
     hero.moveLeft()
   }
-
+  //hero.left = 30
 
   if (hero.left <= 30 && hero.top > 20) {
     hero.moveTop()
   }
+  //hero.left = 30; hero.top = 20 trở về vị trí đầu tiên để quay lại vòng if thứ nhất
 
 
   document.getElementById('game').innerHTML = hero.getHeroElement();
